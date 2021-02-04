@@ -19,7 +19,10 @@ const calculetorBtn = document.getElementById("disit-container");
 calculetorBtn.addEventListener("click", function(event){
 const calNamber = event.target.innerText;
 if(isNaN(calNamber)){
-
+if(calNamber === "C"){
+    const calInputValue = document.getElementById("typed-input");
+calInputValue.value = " ";
+}
 }
 else{
 const calInputValue = document.getElementById("typed-input");
